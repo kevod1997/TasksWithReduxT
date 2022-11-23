@@ -40,7 +40,7 @@ const handleSubmit= (e) => {
 }
 useEffect(() => {
     if (params.id) {
-      setTask(tasks.find((task) => task.id === params.id));
+      setTask(tasks.tasksItems.find((task) => task.id === params.id));
     }
   }, [params, tasks]);
 
