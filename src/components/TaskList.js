@@ -63,6 +63,9 @@ function TaskList() {
             </div>
           </header>
           <p>{task.description}</p>
+          <div>
+            {task.image && <img className="h-96 w-full object-cover" src={task.image} alt={task.title}></img>}
+          </div>
         </div>
       ))}
     </div>
